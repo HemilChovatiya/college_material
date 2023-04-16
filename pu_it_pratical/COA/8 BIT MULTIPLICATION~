@@ -1,0 +1,12 @@
+;200303108003
+;HEMIL CHOVATIYA
+LDA 2011 ;load register to accumulator
+MOV B,A  ;mov a register to b
+LDA 2012 ;load register to accumulator
+MOV D,A  ;mov a register to d
+MVI A,00 
+LOOP: 	ADD B
+	DCR D	
+	JNZ LOOP
+	STA 2009	
+HLT

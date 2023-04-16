@@ -1,0 +1,22 @@
+;Hemil Chovatiya
+;200303108003
+;Decending order sorting
+LXI H,2001
+MOV C,M
+DCR C
+R1: MOV D,C
+LXI H,2002
+L: MOV A,M
+INX H
+CMP M
+JNC S1
+MOV B,M
+MOV M,A
+DCX H
+MOV M,B
+INX H
+S1: DCR D
+JNZ L
+DCR C
+JNZ R1
+hlt    

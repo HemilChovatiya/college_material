@@ -1,0 +1,8 @@
+;Hemil Chovatiya
+;<200303108003>
+LDA 0001
+MOV B,A
+LDA 0002
+ADD B
+STA 0003
+hlt

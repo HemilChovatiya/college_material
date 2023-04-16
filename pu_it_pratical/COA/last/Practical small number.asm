@@ -1,0 +1,22 @@
+;Hemil Chovatiya
+;200303108003
+;<Program title>
+
+
+LDA 2001
+MOV m,A
+LDA 2002
+MOV C,A
+CMP m
+JC Lp1
+JMP Lp2
+
+Lp2: MOV A,m
+STA 2003
+HLT
+
+Lp1: MOV A,C
+STA 2004
+
+
+HLT

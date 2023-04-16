@@ -1,0 +1,12 @@
+;Hemil Chovatiya
+;200303108003
+;8 bit Subtration
+
+LDA 2052
+MOV B,A
+LDA 2051
+SUB B
+STA 2053
+HLT
+
+
