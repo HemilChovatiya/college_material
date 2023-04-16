@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms And Tags</title>
+</head>
+<body>
+    <form action="backend.php">
+        <label for="name">Name:</label>
+        <div>
+           <input type="text" name="myname" id="name">
+        </div><br>
+        <label for="role">Role:</label>
+        <div>
+           <input type="text" name="myrole" id="role">
+        </div><br>
+         <label for="email"> Email Hemil:</label>
+        <div>
+            <input type="email" name="myemail" id="email">
+        </div><br> 
+         <label for="date">Date:</label>
+        <div>
+            <input type="date" value="mydate" id="date"> 
+        </div><br>
+         <label for="bonous"> Bonus:</label>
+        <div>
+           <input type="number" value="mybonus" id="bonous"> 
+        </div><br>
+         <label for="eligible"> Are you Eligible?:</label>
+        <div>
+           <input type="checkbox" value="myeligibiity" id="eligible"> 
+        </div><br>
+        <div>
+            Gender:  <label for="male"> Male</label><input type="radio" name="mygender" id="male">
+            <label for="female">Female</label> <input type="radio" name="mygender" id="female"> 
+            <label for="other">other</label><input type="radio" name="mygender" id="other">
+        </div><br>
+         <label for="age">Age:</label>
+        <div>
+            <input type="number" name="myage" id="age">
+        </div><br>
+         <label for="feedback">Write feedback:</label>
+        <div>
+            <br><textarea name="mytextarea" cols="30" rows="10" id="feedback"></textarea>
+        </div><br>
+        <label for="car">car:</label>
+        <select name="mycar" id="car">
+            <option value="ind">Indica</option>
+            <option value="swf" selected>Swift</option>
+            <option value="bmw">bmw</option>
+            <option value="oth">other</option>
+        </select>
+        <br><br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div><br>
+    </form>
+</body>
+</html>
+
+

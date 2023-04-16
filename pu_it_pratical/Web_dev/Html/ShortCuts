@@ -1,0 +1,15 @@
+<!-- '!' is used to write the code in short cut-->
+<!--&lt; is for '<'' and &gt; is for '>' -->
+<!--Lorem34-->
+<!--<article>,<aside>,<figcaption>,<header>,<footer>
+        <nav>,<summary>,<mark>,<section>,<time>,<details>,etc...-->
+<!--lorem34 is code to write paragraph-->
+ <!--select and press ctrl + / is to comment -->
+    <!--Emmet is used to write fast code-->
+    <!--press alt down to move line to down-->
+    <!--shortcut . is for class and # is for id -->
+<!-- Emmet takes div tag as default -->
+<!-- Creating multiple elements using Emmet
+          span.myclass.myclass.myclass*4 -->
+
+

@@ -1,0 +1,80 @@
+<html>
+<head>
+ <title>nav bar</title>
+ <style>
+   .label{
+    padding-right: 289;
+    color:red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40;
+    
+   }
+ 
+   html {
+        background-color: #ffffff;
+        text-transform: capitalize;
+        letter-spacing: 1.5px;
+    }
+   
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    table
+  {  border:0;
+     position: absolute;
+     right:0;
+     margin-inline-start: 4px;
+     margin-inline-end: 4px;
+     margin-top: 2px;
+     margin-bottom: 2px;
+   
+  }
+  .login_button{
+    background-color: black;
+    color: #ffffff;
+  }
+  td{
+    border: #ffffff;
+    background-color: #ffffff;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 12px;
+  }
+  
+  td:not(.label):hover{
+    font-size: 19px;
+    box-shadow: 6px 8px 10px rgba(0, 0, 0.1, 0.1);
+    transition: all 0.3s ease 0s;
+  }
+  
+  li{
+    margin-inline-start: 2;
+    display: block;
+    letter-spacing: 1px;
+    padding-left: 45px;
+    padding-right: 45px;
+    color: black;
+  }
+  
+ </style>
+</head>
+<body>
+  
+  <img src="Menu64px.png"><img>
+  <div>
+    <table>
+      <ul>
+        <tr>
+        
+        <td><li> <a class="nav" href="http://localhost:5500/P2_list.HTML">HOME</a></li></td>
+   	   <td><li> <a class="nav" href="http://localhost:5500/P2_list.HTML">ABOUT US</a></li></td>
+        <td><li> <a class="nav" href="http://localhost:5500/P2_list.HTML">CONTACT US</a></li></td>
+        <td><li> <a class="nav" href="http://localhost:5500/P2_list.HTML">SIGN UP</a></li></td>
+        <td class="login_button"><li  class="login_button1"><a class="nav" href="http://localhost:5500/P2_list.HTML" style="color:#ffffff">LOGIN IN</a></li></td>
+      </tr>
+    </table>
+  </ul>
+</div>
+</body>
+</html>
