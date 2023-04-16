@@ -1,0 +1,19 @@
+<html>
+    <head><style>
+            *{
+                font-family: arial;
+                text-align: center;
+            }
+        </style></head>
+<body>
+ <h2>Create Object from JSON String</h2>
+ <h2>When receiving data from a web server, the data is always a string</h2>
+ <p id="demo"></p>
+ <script>
+  var txt = '{"Name": "Hemil Chovatita", "Dept": "IT" , "Enrollment": "200303108003","Age": 21, "City": "Surat"}'
+ 
+ var obj = JSON.parse(txt);
+ document.getElementById("demo").innerHTML = obj.Name + ", " + obj.Dept+ ", " + obj.Enrollment+ ", " + obj.City+ ", " + obj.Age;
+ </script>
+</body>
+</html>

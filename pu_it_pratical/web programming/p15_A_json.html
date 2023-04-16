@@ -1,0 +1,18 @@
+<html>
+    <head><style>
+            *{
+                font-family: arial;
+                text-align: center;
+            }
+        </style></head>
+    <body>
+        <h2>Create JSON string from a JavaScript object.</h2>
+<h2> When sending data to a web server, the data has to be a string</h2>
+        <p id="demo"></p>
+        <script>
+            var obj = {Name: "Hemil Chovatita", Dept: "IT" , Enrollment: "200303108003",Age: 21, Sem:"5th",Hobbies:"Playing Games",City: "Surat"};
+            var myJSON = JSON.stringify(obj);
+            document.getElementById("demo").innerHTML = myJSON;
+        </script>
+    </body>
+</html>

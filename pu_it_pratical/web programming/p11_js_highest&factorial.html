@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        find highest from given three value
+    </title>
+    <style>
+        * {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            letter-spacing: 2.5px;
+            text-transform: capitalize;
+        }
+
+        button {
+            width: 140px;
+            height: 45px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: white;
+            background-color: rgb(19, 17, 17);
+            border: none;
+            border-radius: 45px;
+            box-shadow: 6px 8px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: solid 1px rgb(255, 252, 252);
+        }
+
+        td,
+        th {
+            padding: 15px;
+        }
+
+        input {
+            width: 257px;
+            height: 35px;
+            padding: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            border-radius: 9px;
+            box-shadow: 6px 8px 15px rgba(0, 0, 0, .2);
+            transition: all 0.3s ease 0s;
+            outline: solid 1px rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body><label>
+        <table border="0" align="CENTER">
+            <tr>
+                <th class="header" colspan="2"> Find Largest Value </th>
+            </tr>
+            <tr>
+                <td> First Number</td>
+                <td> <input id="id1" type="text" name="number" placeholder="Enter Number" required> </td>
+            </tr>
+            <tr>
+                <td> Second Number</td>
+                <td> <input id="id2" type="text" name="number" placeholder="Enter Number" required> </td>
+            </tr>
+            <tr>
+            <tr>
+                <td> Third Number</td>
+                <td> <input id="id3" type="text" name="number" placeholder="Enter Number" required> </td>
+            </tr>
+            <tr>
+                <td> <button onclick="largest()">ANSWER</button> </td>
+                <th class="ans">
+                    <div id="ans"></div>
+                </th>
+            </tr>
+        </table><br><br>
+        <table border="0" align="center">
+            <tr>
+                <th colspan="2"> Find Factorial Of Nth Number </th>
+            </tr>
+            <tr>
+                <td> Enter Nth Number </td>
+                <td> <input id="f1" type="text" name="number" placeholder="Enter Number" required> </td>
+            </tr>
+            <tr>
+                <td> <button onclick="factorial()">ANSWER</button> </td>
+                <th>
+                    <div id="fans"></div>
+                </th>
+            </tr>
+        </table>
+    </label>
+</body>
+
+</html>
+
+<script>   function factorial() {
+        let n = Number(document.getElementById("f1").value);
+        let fact = 1;
+        for (let i = 1; i <= n; i++) {
+            fact = fact * i;
+        }
+        let f = ("Factorial Of " + n + " is " + fact);
+        document.getElementById("fans").innerHTML = f;
+    }
+    function largest() {
+        let d;
+        let a = Number(document.getElementById("id1").value);
+        let b = Number(document.getElementById("id2").value);
+        let c = Number(document.getElementById("id3").value);
+        if (a >= b && a >= c) {
+            d = (a + " is the largest element");
+        }
+        else if (b >= a && b >= c) {
+            d = (b + " is the largest element");
+        }
+        else { d = (c + " is the largest element"); }
+        document.getElementById("ans").innerHTML = d;
+    }
+</script>
+</body>
+
+</html>

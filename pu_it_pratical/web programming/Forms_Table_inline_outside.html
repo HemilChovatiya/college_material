@@ -1,0 +1,198 @@
+<html>
+
+<head>
+    <title>Forms And Tags</title>
+</head>
+<link rel="stylesheet" type="text/css" href="form_css.css">
+<style>
+    html {
+        background-color: f5f5f5;
+        text-transform: capitalize;
+        letter-spacing: 1.5px;
+    }
+
+    table {
+        border: none;
+        border-color: white;
+    }
+
+    label,
+    textarea,
+    div,
+    td,
+    tr,
+    th,
+    h3,
+    input {
+        background-color: white;
+
+    }
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    div {
+        position: absolute;
+        top: 35;
+        left: 450;
+        width: 450;
+        border-radius: 4px;
+    }
+
+    td {
+        padding: 4px;
+        font-size: larger;
+        text-align-last: center;
+    }
+
+    input[type=radio],
+    input[type=checkbox] {
+        margin: 7px;
+        box-shadow: 6px 8px 10px rgba(0, 0, 0.1, 0.1);
+        transition: all 0.3s ease 0s;
+    }
+
+    select[class=dropdown],
+    option[class=opt],
+    input[type=email],
+    input[type=number],
+    input[type=text],
+    textarea[type=textarea] {
+        width: 257px;
+        height: 35px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: #000;
+        background-color: #fff;
+        border: none;
+        border-radius: 9px;
+        box-shadow: 6px 8px 15px rgba(0, 0, 0, .2);
+        transition: all 0.3s ease 0s;
+        outline: solid 1px rgb(255, 255, 255)
+    }
+
+    button {
+        width: 140px;
+        height: 45px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        color: white;
+        background-color: rgb(19, 17, 17);
+        border: none;
+        border-radius: 45px;
+        box-shadow: 6px 8px 15px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: solid 1px rgb(255, 252, 252);
+    }
+
+    button:hover {
+        color: #000;
+        background-color: #fff;
+        outline: black;
+    }
+</style>
+
+<body>
+    <div style="border:rgb(172, 170, 166); border-width:1px; border-style:solid;">
+        <form>
+            <b>
+                <p align="center">Hemil Chovatiya Registration Form</p>
+            </b>
+            <table border=0 align="center">
+
+                <tr>
+                    <td><label>First Name:</label></td>
+                    <td><input type="text" placeholder="Enter Name"></td>
+
+                </tr>
+                <tr>
+                    <td><label>Middle Name:</label></td>
+                    <td><input type="text" placeholder="Middle Name"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <input type="radio"><label> Male</label>
+                        <input type="radio"><label>Female</label>
+                        <input type="radio"><label>Other</label>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td> <label>Address:</label></td>
+                    <td><textarea cols="30" rows="5" type="textarea"
+                            placeholder="A-18,Bapa Sitaram Row House,Sarthanajakatnaka"></textarea></td>
+
+                </tr>
+                <tr>
+                    <td><label>Phone No.:</label></td>
+                    <td><input type="number" placeholder="Enter Phone No"></td>
+
+                </tr>
+                <tr>
+                    <td><label> Email :</label></td>
+                    <td><input type="email" placeholder="hemilchovatiya4@gmail.com"></td>
+
+                </tr>
+                <tr>
+                    <td><label> Hobbies:</label></td>
+
+                    <td><input type="checkbox">Games
+                        <input type="checkbox">Movies
+                        <input type="checkbox">Coding
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label>City:</label></td>
+
+
+                    <td><input type="text" placeholder="Surat"></td>
+
+                </tr>
+                <tr>
+                    <td><label>State:</label></td>
+
+
+                    <td> <input type="text" placeholder="Gujarat"></td>
+
+
+                </tr>
+                <tr></tr>
+                <td><label>Country:</label></td>
+
+
+                <td><input type="text" placeholder="India"></td>
+
+
+                <tr>
+                    <td><label>College Name:</label></td>
+
+                    <td><select class="dropdown">
+                            <option class="opt">PIT</option>
+                            <option class="opt">PIET</option>
+                            <option class="opt">PU</option>
+                            <option class="opt">GTU</option>
+                        </select></td>
+                <tr>
+
+                    <td><button type="submit">Submit</button></td>
+                    <td><button type="reset">Cancel</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

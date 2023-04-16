@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>
+        Current Date And time
+    </title>
+    <style>
+        * {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            letter-spacing: 2.5px;
+            text-transform: capitalize;
+        }
+        button{width: 250px;
+        height: 45px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        color: white;
+        background-color: rgb(19, 17, 17);
+        border: none;
+        border-radius: 45px;
+        box-shadow: 6px 8px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: solid 1px rgb(255, 252, 252);}
+    </style>
+</head>
+<body>
+    <h2>JavaScript new Date() Function</h2>
+    <button onclick="date()">click to see today's date</button>
+    <p id="date1"></p>
+    <script>function date(){
+        const date = new Date();
+        document.getElementById("date1").innerHTML = "Today's Date is :"+date;}
+    </script>
+</body>
+</html>

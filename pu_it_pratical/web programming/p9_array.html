@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        array
+    </title>
+    <style>
+        * {
+            font-size: 15px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        button{
+        width: 140px;
+        height: 45px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        color: white;
+        background-color: rgb(19, 17, 17);
+        border: none;
+        border-radius: 45px;
+        box-shadow: 6px 8px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: solid 1px rgb(255, 252, 252);}
+        button:hover {
+        color: #000;
+        background-color: #fff;
+        outline: black;
+        }
+    </style>
+</head>
+<body><h2>
+    <table border="0" height="300px" width="1000px">
+    <tr> 
+    <td><p>Array</p></td>
+    <td><button onclick="array()">Print Array</button></td>
+        <td><p id="array_friend"></p></td>
+    </tr>
+    <tr>
+        <td><p>Array Push</p></td>
+            <td><button onclick="array_push()">Print push Array</button></td>
+                <td><p id="array_push1"></p>
+    <p id="array_push2"></p></td>
+
+    </tr><tr>
+        <td><p>Array Pop</p></td>
+            <td><button onclick="array_pop()">pop Array Method</button></td>
+                <td><p id="array_pop1"></p>
+    <p id="array_pop2"></p></td>
+
+</tr><tr>
+    <td><p>Array join</p></td>
+    <td><button onclick="array_join()">join Array Method</button></td>
+        <td><p id="array_join1"></p>
+    <p id="array_join2"></p></td>
+
+    </tr><tr>
+        <td><p>Array Shift</p></td>
+            <td><button onclick="array_shift()">shift Array Method</button></td>
+                <td><p id="array_shift1"></p>
+    <p id="array_shift2"></p></td>
+
+</tr><tr>
+    <td><p>Array unShift</p></td>
+    <td><button onclick="array_unshift()">unshift Array Method</button></td>
+        <td><p id="array_unshift1"></p>
+    <p id="array_unshift2"></p></td>
+    
+</tr><tr>
+    <td><p>Array slice</p></td>
+<td><button onclick="array_slice()">slice Array Method</button></td>
+    <td><p id="array_slice1"></p>
+    <p id="array_slice2"></p></td>
+
+    </tr>
+    </table></h2>
+    <script>
+        const friends=["hemil","raj","sahil","romit","jay","krish","dharmik","tirth"];
+        
+function array() 
+        {
+            document.getElementById("array_friend").innerHTML = friends;
+        }
+        function array_push()
+        {
+            document.getElementById("array_push1").innerHTML = " Before push : "+friends;
+            friends.push("shrey");
+            document.getElementById("array_push2").innerHTML = " After push : "+friends;
+        }
+        function array_pop()
+        {
+            document.getElementById("array_pop1").innerHTML = " Before pop : "+friends;
+            friends.pop("shrey");
+            document.getElementById("array_pop2").innerHTML = " After pop : "+friends;
+        }
+        function array_join()
+        {
+            document.getElementById("array_join1").innerHTML = " Before join : "+friends;
+            document.getElementById("array_join2").innerHTML = " After join : "+friends.join(" / / ");
+        }
+        function array_shift()
+        {
+            document.getElementById("array_shift1").innerHTML = " Before shift : "+friends;
+            friends.shift();
+            document.getElementById("array_shift2").innerHTML = " After shift : "+friends;
+        }
+        function array_unshift()
+        {
+            document.getElementById("array_unshift1").innerHTML = " Before unshift : "+friends;
+            friends.unshift("roni");
+            document.getElementById("array_unshift2").innerHTML = " After unshift : "+friends;
+        }
+        function array_slice()
+        {
+            document.getElementById("array_slice1").innerHTML = " Before slice : "+friends;
+            friends.slice(2, 0, "hiren", "miren");
+            document.getElementById("array_slice2").innerHTML = " After slice : "+friends;
+        }
+
+    </script>
+</body>
+</html>

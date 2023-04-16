@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="p14_b.xsl"?>
+<catalog>
+<cd>
+<Player>Ronaldo </Player>
+<Sports>Football </Sports>
+<Bidding>$25M</Bidding>
+<Country>Portugal</Country>
+<Team>Manchester United</Team>
+</cd>
+<cd>
+<Player>Lionel Messi </Player>
+<Sports>Football </Sports>
+<Bidding>$40M</Bidding>
+<Country>Argentina </Country>
+<Team>PSG</Team>
+</cd>
+<cd>
+<Player>Virat Kohli</Player>
+<Sports>Cricket</Sports>
+<Bidding>$50M</Bidding>
+<Country>India</Country>
+<Team>RCB</Team>
+</cd>
+<cd>
+<Player>MS Dhoni</Player>
+<Sports>Cricket </Sports>
+<Bidding>$50M</Bidding>
+<Country>India</Country>
+<Team>CSK</Team>
+</cd>
+<cd>
+
+<Player>Toni Cross</Player>
+<Sports>Football</Sports>
+<Bidding>$30M</Bidding>
+<Country>Germany</Country>
+<Team>Real Madrid</Team>
+</cd>
+<cd>
+
+<Player>Hardik Pandya</Player>
+<Sports>Cricket </Sports>
+<Bidding>$60M</Bidding>
+<Country>India</Country>
+<Team>Gujarat Titans</Team>
+</cd>
+</catalog>

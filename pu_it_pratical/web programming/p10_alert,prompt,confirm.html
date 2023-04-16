@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Alert,Prompt,Confirm Box
+</title>
+<style>
+    *{
+        text-align: center;
+    }
+   
+    button{width: 140px;
+        height: 45px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        color: white;
+        background-color: rgb(19, 17, 17);
+        border: none;
+        border-radius: 45px;
+        box-shadow: 6px 8px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: solid 1px rgb(255, 252, 252);}
+        button:hover {
+        color: #000;
+        background-color: #fff;
+        outline: black;
+    }
+</style>
+</head>
+<body>
+<h2>Java Script Alert Box</h2>
+<button onclick="alert_hemil()">Click Here</button>
+<h2>JavaScript Confirm Box</h2>
+    <button onclick="confirmFunction()">Try it</button>
+    <p id="masge"></p>
+    
+<h2>JavaScript Prompt Box</h2>
+    <button onclick="prompt_Function()">Prompt Try it</button>
+    <p id="inp"></p>
+<script>
+    function alert_hemil()
+    {
+        var msg="This is alert message to Hemil";
+        alert(msg);
+    }
+    function confirmFunction() {
+            var txt;
+            if (confirm("Press a button!")) {
+                txt = "You pressed OK!";
+            } else {
+                txt = "You pressed Cancel!";
+            }
+            document.getElementById("masge").innerHTML = txt;
+        }
+    function prompt_Function()
+    {
+        var h=prompt("Enter Message:","Hemil Chovatiya");
+        if(h!=null && h!="")
+        {
+            document.getElementById("inp").innerHTML="Hello, "+h+",welcome to app";
+        }
+        else
+        {
+            document.getElementById("inp").innerHTML("Not Valid");
+        }
+
+    } 
+</script>
+</body>
+</html>

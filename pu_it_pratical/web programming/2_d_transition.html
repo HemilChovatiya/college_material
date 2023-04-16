@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>2_d Transform Property</title>
+    <style>
+        table {
+            outline: 1px solid #d5d5d5;
+            border-radius: 5px;
+            box-shadow: 6px 8px 15px rgba(0, 0, 0, .2);
+        }
+        p {
+            font-weight: 20;
+            font-size: 18px;
+        }
+        td,tr {
+            padding: 18px;
+        }
+        div{ 
+            width: 150px;
+            height: 80px;
+            background-color: #fac840;
+            outline: 1px solid #FEE398;}
+        div.ab{
+            transform: rotate(0deg);
+        }
+        div.a{
+            transform: rotate(20deg);
+        }
+        div.b{
+            transform: skew(20deg, 20deg);
+        }
+        div.c {
+            transform: scale(1.2, 0.9);
+        }
+        div.d {
+            transform: translate(20px, 5px);
+        }
+        div.e {
+           transform: matrix(0.586, 0.8, -0.8, 0.586, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <table border=0 align="center">
+        <tr>
+            <th><p>Transform Property</p></th>
+            <th><p>Before</p></th>
+            <th><p>After</p></th>
+        </tr>
+        <tr>
+            <td><p>transform: rotate(20deg):</p></td>
+            <td><div class="ab">Hemil Chovatiya!</div></td>
+            <td><div class="a">Hemil Chovatiya!</div></td>
+        </tr>
+        <td><p>transform: skew(20deg,20deg):</p></td>
+        <td><div class="ab">Hemil Chovatiya!</div></td>
+        <td><div class="b">Hemil Chovatiya!</div></td>
+        <tr>
+            <td><p>transform: scale(1,1):</p></td>
+            <td><div class="ab">Hemil Chovatiya!</div></td>
+            <td><div class="c">Hemil Chovatiya!</div></td>
+        </tr>
+        <tr>
+            <td><p>transform: translate(20px,15px):</p></td>
+            <td><div class="ab">Hemil Chovatiya!</div></td>
+            <td><div class="d">Hemil Chovatiya!</div></td>
+        </tr>
+        <tr><td><p>transform: matrix(0.586,0.8,-0.8,0.586,0,0);</p></td>
+            <td><div class="ab">Hemil Chovatiya!</div></td>
+            <td><div class="e">Hemil Chovatiya!</div></td>
+        </tr>
+    </table>
+</body>
+</html>

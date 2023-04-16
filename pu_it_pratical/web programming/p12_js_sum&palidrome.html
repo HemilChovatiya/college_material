@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        sum & palidrome
+    </title>
+    <style>
+        * {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            letter-spacing: 2.5px;
+            text-transform: capitalize;
+        }
+
+        button {
+            width: 140px;
+            height: 45px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: white;
+            background-color: rgb(19, 17, 17);
+            border: none;
+            border-radius: 45px;
+            box-shadow: 6px 8px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: solid 1px rgb(255, 252, 252);
+        }
+
+        td,
+        th {
+            padding: 15px;
+        }
+
+        input {
+            width: 257px;
+            height: 35px;
+            padding: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            border-radius: 9px;
+            box-shadow: 6px 8px 15px rgba(0, 0, 0, .2);
+            transition: all 0.3s ease 0s;
+            outline: solid 1px rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center" border="0">
+        <tr>
+            <th colspan="2"> Find Sum upto Nth number </th>
+        </tr>
+        <tr>
+            <td> Enter Nth Number </td>
+            <td> <input id="s1" type="text" name="number" placeholder="Enter Number" required> </td>
+        </tr>
+        <td> <button onclick="sum()">ANSWER</button> </td>
+        <th>
+            <div id="sum"></div>
+        </th>
+        </tr>
+    </table>
+    <table border="0" align="center">
+        <tr>
+            <th colspan="2"> Check For Palindrome </th>
+        </tr>
+        <tr>
+            <td> Enter Number to check Palindrom </td>
+            <td> <input id="p1" type="text" name="number" placeholder="Enter Number" required> </td>
+        </tr>
+        <tr>
+            <td> <button onclick="palindrome()">ANSWER</button> </td>
+            <th>
+                <div id="pd"></div>
+            </th>
+        </tr>
+    </table>
+    <script>  function sum() {
+            let n = Number(document.getElementById("s1").value);
+            let sum = 0;
+            for (let i = 1; i <= n; i++) {
+                sum = sum + i;
+            }
+            let f = ("Sum Of " + n + " is " + sum);
+            document.getElementById("sum").innerHTML = f;
+        }
+        function palindrome() {
+            let a = document.getElementById("p1").value;
+            let b = "";
+            for (let i = a.length - 1; i >= 0; i--) {
+                b += a[i];
+            }
+            if (b == a) {
+                document.getElementById("pd").innerHTML = "YES,It is a Palindrom";
+            }
+            else { document.getElementById("pd").innerHTML = "NO, It is not a Plindrom"; }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+html {
+    background-color: f5f5f5;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+}
+
+table {
+    align-self:center;
+    border: none;
+    border-color: white;
+}
+
+label,
+textarea,
+div,
+td,
+tr,
+input {
+    background-color: white;
+
+}
+p
+{   text-align:center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color:black;
+}
+
+div {
+    border:rgb(172, 170, 166); 
+    border-width:1px; 
+    border-style:solid;
+    position: absolute;
+    top: 35;
+    left: 450;
+    width: 450;
+    border-radius: 4px;
+}
+
+td {
+    padding: 4px;
+    font-size: larger;
+    text-align-last: center;
+}
+
+input[type=radio],input[type=checkbox]
+{  
+    margin:7px;
+    box-shadow: 6px 8px 10px rgba(0, 0, 0.1, 0.1);
+    transition: all 0.3s ease 0s;
+}
+select[class=dropdown],option[class=opt],input[type=email],input[type=number],input[type=text],textarea[type=textarea]{
+    width: 257px;
+    height: 35px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 6px 8px 15px rgba(0, 0, 0, .2);
+    transition: all 0.3s ease 0s;
+    outline:solid 1px rgb(255, 255, 255)
+    
+}
+button {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color:white;
+    background-color: rgb(19, 17, 17);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 6px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: solid 1px rgb(255, 252, 252);
+}
+button:hover {
+    color: #000;
+    background-color: #fff;
+    outline:black;
+}
+
